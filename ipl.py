@@ -252,7 +252,7 @@ if options == 'Team vs Team':
         
         
 
-if options == 'Player Statistics':
+if options == 'Player Statistics': #Individual Player Stats
     def player_info(name):
         player_stats = deliveries.groupby(['ID','batter'])[['batsman_run']].sum()
         scores = player_stats.loc[(slice(None),name), 'batsman_run'].values
