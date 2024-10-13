@@ -9,9 +9,9 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-df = pd.read_csv(r"C:\Users\dines\Downloads\archive (3)\IPL Matches 2008-2020.csv")
-matches = pd.read_csv(r"C:\Users\dines\Dinesh\Machine learning\IPL\IPL_Matches_2008_2022.csv")
-deliveries = pd.read_csv(r"C:\Users\dines\Dinesh\Machine learning\IPL\IPL_Ball_by_Ball_2008_2022.csv")
+df = pd.read_csv("IPL Matches 2008-2020.csv")
+matches = pd.read_csv("IPL_Matches_2008_2022.csv")
+deliveries = pd.read_csv("IPL_Ball_by_Ball_2008_2022.csv")
 matches.replace('Rising Pune Supergiant','Rising Pune Supergiants',inplace=True)
 matches.replace('Kings XI Punjab','Punjab Kings',inplace=True)
 matches.replace('Delhi Daredevils','Delhi Capitals',inplace=True)
