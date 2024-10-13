@@ -118,9 +118,9 @@ if options=='Batsman vs Bowler':
     
           
 
-import WinPredictor
+#import WinPredictor
 
-if options == 'Win Predictor':
-    WinPredictor.WinPredictor(final,matches,team_colors)
+#if options == 'Win Predictor':
+   # WinPredictor.WinPredictor(final,matches,team_colors)
     
     
