@@ -90,8 +90,7 @@ def load_text_file(file_path):
 
 if options == "About":
     text_file_path = "About.txt"  
-    image_file_path = "https://raw.githubusercontent.com/DineshNakkina/Streamlit-Application-for_IPL/main/Images/IPL.png
-" 
+    image_file_path = "Images/IPL.png" 
     text_content = load_text_file(text_file_path)
 
     st.image(image_file_path, use_column_width=True)
