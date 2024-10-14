@@ -122,33 +122,33 @@ def team_vs_team(matches, merged, team_colors):
                 trace = go.Pie(labels=[team_one,team_two], values=[result[1],result[2]], hole=0.5,marker=dict(colors=[team_colors[team_one],team_colors[team_two]]))
                 fig = go.Figure(data=trace)
                 st.subheader('Win Percentage')
-                st.plotly_chart(fig,use_container_width=True)
+                st.plotly_chart(fig,use_container_width=True, key="win_percentage_chart")
         with col2:
             with st.container(border=True):
                 trace2 = go.Pie(labels=[team_one,team_two], values=[result[4],result[5]], hole=0.5,marker=dict(colors=[team_colors[team_one],team_colors[team_two]]))
                 fig0 = go.Figure(data=trace2)
                 st.subheader('Toss Win Percentage')
-                st.plotly_chart(fig0,use_container_width=True)    
+                st.plotly_chart(fig0,use_container_width=True, key="toss_win_chart")    
         with col3:
             with st.container(border=True):
                 st.subheader('PowerPlay RunRate Comparision')
-                st.line_chart(powerplay_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]])
+                st.line_chart(powerplay_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]], key="powerplay_runrate_chart")
         with col4:
             with st.container(border=True):
                 st.subheader('Deathover Runrate Comparision')
-                st.line_chart(deathover_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]])
+                st.line_chart(deathover_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]], key="deathover_runrate_chart")
         with st.container(border=True):
             fig1 = go.Figure(data=[go.Bar(name=team_one, x=batting_chart['Season'], y=batting_chart[team_one],marker_color=team_colors[team_one]),go.Bar(name=team_two, x=batting_chart['Season'], y=batting_chart[team_two],marker_color=team_colors[team_two])])
             fig1.update_layout(barmode='group', xaxis_title='Season', yaxis_title='Runs')
             fig1.update_xaxes(tickvals=batting_chart['Season'])
             st.subheader('Runs over the Seasons')
-            st.plotly_chart(fig1, use_container_width=True)
+            st.plotly_chart(fig1, use_container_width=True,, key="batting_chart")
         with st.container(border=True):
             fig2 = go.Figure(data=[go.Bar(name=team_one, x=bowling_chart['Season'], y=bowling_chart[team_one],marker_color=team_colors[team_one]),go.Bar(name=team_two, x=bowling_chart['Season'], y=bowling_chart[team_two],marker_color=team_colors[team_two])])
             fig2.update_layout(barmode='group', xaxis_title='Season', yaxis_title='Wickets')
             fig2.update_xaxes(tickvals=bowling_chart['Season'])
             st.subheader('Wickets over the Seasons')
-            st.plotly_chart(fig2, use_container_width=True)
+            st.plotly_chart(fig2, use_container_width=True, key="bowling_chart")
 
         with st.container(border=True):
             st.header('Recent Form :')
