@@ -69,11 +69,11 @@ def team_vs_team(matches, merged, team_colors):
     if st.sidebar.button('submit'):
         with c1:
             with st.container(border=True): 
-                path = f'{team_one}.jpg'
+                path = f'Images/{team_one}.jpg'
                 st.image(path,use_column_width=True) 
         with c2:
             with st.container(border=True):
-                path = f'{team_two}.jpg'
+                path = f'Images/{team_two}.jpg'
                 st.image(path,use_column_width=True)
 
         result = h2h(team_one,team_two)
