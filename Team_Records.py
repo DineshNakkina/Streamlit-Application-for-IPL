@@ -83,7 +83,7 @@ def team_records(merged,matches,team_colors):
         with st.container(border=True):
             col1,col2 = st.columns(2)
             with col1:
-                path = f'{team_name}.jpg'
+                path = f'Images/{team_name}.jpg'
                 st.image(path,use_column_width=True)
             with col2:
                 st.write('Matches Played:',matches_played)
