@@ -1,4 +1,5 @@
-**IPL DATA ANALYSIS STREAMLIT APPLICATION**
+**IPL DATA ANALYSIS STREAMLIT APPLICATION** 
+click here :- https://application-for-ipl-analysis-by-dinesh.streamlit.app/
 
 
 This is a Streamlit application designed for analyzing IPL (Indian Premier League) data. It provides comprehensive insights into team and player performance,
