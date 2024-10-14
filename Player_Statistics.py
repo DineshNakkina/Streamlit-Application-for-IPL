@@ -78,7 +78,7 @@ def player_statistics(merged,deliveries):
             st.write(f'Hundreads : {res[3]}')
             st.write(f'highest_score : {res[4]}')
         with col1:
-            st.image('Unknown.jpg',width=200)
+            st.image('Images/Unknown.jpg',width=200)
     st.divider()
 
     tab1,tab2,tab3,tab4,tab5 = st.tabs(['Batting Stats:cricket_bat_and_ball:','Bowling Stats🥎','Fielding Stats',"Charts 📊",'Summary Stats'])
