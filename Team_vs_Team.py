@@ -142,7 +142,7 @@ def team_vs_team(matches, merged, team_colors):
             fig1.update_layout(barmode='group', xaxis_title='Season', yaxis_title='Runs')
             fig1.update_xaxes(tickvals=batting_chart['Season'])
             st.subheader('Runs over the Seasons')
-            st.plotly_chart(fig1, use_container_width=True,, key="batting_chart")
+            st.plotly_chart(fig1, use_container_width=True, key="batting_chart")
         with st.container(border=True):
             fig2 = go.Figure(data=[go.Bar(name=team_one, x=bowling_chart['Season'], y=bowling_chart[team_one],marker_color=team_colors[team_one]),go.Bar(name=team_two, x=bowling_chart['Season'], y=bowling_chart[team_two],marker_color=team_colors[team_two])])
             fig2.update_layout(barmode='group', xaxis_title='Season', yaxis_title='Wickets')
