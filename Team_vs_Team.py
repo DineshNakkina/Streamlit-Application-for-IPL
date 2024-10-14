@@ -132,11 +132,11 @@ def team_vs_team(matches, merged, team_colors):
         with col3:
             with st.container(border=True):
                 st.subheader('PowerPlay RunRate Comparision')
-                st.line_chart(powerplay_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]], key="powerplay_runrate_chart")
+                st.line_chart(powerplay_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]])
         with col4:
             with st.container(border=True):
                 st.subheader('Deathover Runrate Comparision')
-                st.line_chart(deathover_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]], key="deathover_runrate_chart")
+                st.line_chart(deathover_chart,x='Season',y=[team_one,team_two],color=[team_colors[team_one],team_colors[team_two]])
         with st.container(border=True):
             fig1 = go.Figure(data=[go.Bar(name=team_one, x=batting_chart['Season'], y=batting_chart[team_one],marker_color=team_colors[team_one]),go.Bar(name=team_two, x=batting_chart['Season'], y=batting_chart[team_two],marker_color=team_colors[team_two])])
             fig1.update_layout(barmode='group', xaxis_title='Season', yaxis_title='Runs')
