@@ -46,7 +46,7 @@ team_colors = {
     'Delhi Capitals': '#FF0000',  # red
     'Chennai Super Kings': '#FFFF00',  # Yellow
     'Gujarat Titans': '#800080',  # Purple
-    'Lucknow Super Giants': '#FFC0CB',  # Pink
+    'Lucknow Super Giants': '#ADD8E6',  # Light Blue
     'Kolkata Knight Riders': '#800080',  # Purple
     'Punjab Kings': '#C0C0C0',  # Silver
     'Mumbai Indians': '#0000FF',  # Blue
@@ -54,7 +54,7 @@ team_colors = {
     'Gujarat Lions': '#FF4500',  # OrangeRed
     'Pune Warriors': '#8A2BE2',  # BlueViolet
     'Deccan Chargers': '#000080',  # Navy
-    'Kochi Tuskers Kerala': '#800000'  # Maroon (same as Kolkata Knight Riders for demonstration)
+    'Kochi Tuskers Kerala': '#800000'  # Maroon 
 }
 
 team_totals = merged.groupby(['ID','innings'])[['total_run']].sum().reset_index()
