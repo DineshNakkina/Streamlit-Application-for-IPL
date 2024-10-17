@@ -93,7 +93,7 @@ if options == "About":
     image_file_path = "Images/IPL.png" 
     text_content = load_text_file(text_file_path)
 
-    st.image(image_file_path, use_column_width=True)
+    st.image(image_file_path, use_column_width=False)
     st.text_area("About IPL", text_content, height=300)
 
 import Team_vs_Team
