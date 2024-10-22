@@ -1,4 +1,4 @@
-**IPL DATA ANALYSIS STREAMLIT APPLICATION** 
+**IPL DATA ANALYSIS WEB APPLICATION** 
 
 click here :- https://application-for-ipl-analysis-by-dinesh.streamlit.app/
 
